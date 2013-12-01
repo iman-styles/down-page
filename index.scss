@@ -1,0 +1,94 @@
+@function down-url($path) {
+  @return url("../components/iman-styles-down-page/assets/#{$path}");
+}
+
+// This page has a different header to other pages
+// There is no navigation in the header or footer
+// These styles adapt the header
+.header {
+	min-height:60px
+}
+.header .phone-number a {
+	color:#fff
+}
+.error-page {
+	padding-top:80px;
+}
+.full-height {
+	height:100%;
+}
+//TODO: I'm sure there is an existing class for this
+.text-center {
+	text-align:center;
+}
+.title-down {
+	font-weight:100;
+	font-size:48px;
+	line-height:54px;
+}
+.text-down {
+	color:#a3a1c6;
+	font-size:24px;
+}
+.box-down {
+	padding:20px;
+	background-color:#393571;
+	background-color:rgba(0,0,0,0.2);
+	border-radius:2px;
+	color:#d1d1db;
+	width:300px; 
+	margin:20px 10px;
+	font-size:24px;
+	text-align:left;
+	height:20px;
+}
+
+//TODO: add these icons to the common IMAN icons component
+.icon-email {
+	background-image: down-url('icon-email.png');
+	display:inline-block;
+	width:25px;
+	height:18px;
+	margin-right:20px;
+	vertical-align:middle;
+	margin-top:-5px;
+}
+.icon-phone {
+	background-image: down-url('icon-phone.png');
+	display:inline-block;
+	width:18px;
+	height:24px;
+	margin-right:20px;
+	vertical-align:middle;
+	margin-top:-5px;
+}
+
+.box-more-info {
+	margin:20px auto 0 auto;
+	color:#a3a1c6;
+	font-size:18px;
+	line-height:24px;
+	padding-bottom:40px;
+	border-bottom:2px solid #393571;
+	width:300px;
+}
+
+// Responsive styles
+// Only 1 break point at the moment, chosen for this page only
+@media screen and (max-width:740px){
+	.error-page {
+		margin:0 10px;
+	}
+	.box-down {
+		clear:both; 
+		margin:10px auto;
+		font-size:18px;
+	}
+	.box-down-container {
+		width:340px;
+		margin:0 auto;
+	}
+	.r-grid__unit {
+		width:100%;
+	}
+}

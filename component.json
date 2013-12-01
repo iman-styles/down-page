@@ -1,0 +1,14 @@
+{
+  "name": "down-page",
+  "main": "index.scss",
+  "version": "0.0.1",
+  "dependencies": {},
+  "styles": [
+    "index.scss"
+  ],
+  "files": [
+    "assets/down-icon-email.png",
+    "assets/down-icon-phone.png",
+    "assets/down-shield.png"
+  ]
+}
